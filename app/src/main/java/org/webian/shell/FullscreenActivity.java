@@ -104,7 +104,7 @@ public class FullscreenActivity extends AppCompatActivity {
         });
 
         GeckoView geckoView = (GeckoView) findViewById(R.id.geckoview);
-        geckoView.add("http://mozilla.com");
+        geckoView.loadUri("http://mozilla.com", 0);
     }
 
     @Override
