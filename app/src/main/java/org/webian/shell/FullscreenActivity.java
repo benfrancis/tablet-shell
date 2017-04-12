@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.MotionEvent;
 import android.view.View;
+import org.mozilla.gecko.GeckoView;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -101,6 +102,9 @@ public class FullscreenActivity extends AppCompatActivity {
                 toggle();
             }
         });
+
+        GeckoView geckoView = (GeckoView) findViewById(R.id.geckoview);
+        geckoView.add("http://mozilla.com");
     }
 
     @Override

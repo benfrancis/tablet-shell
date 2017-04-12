@@ -16,6 +16,7 @@
         android:gravity="center"
         android:keepScreenOn="true"
         android:text="@string/dummy_content"
+        android:textAlignment="center"
         android:textColor="#33b5e5"
         android:textSize="50sp"
         android:textStyle="bold" />
@@ -29,11 +30,12 @@
             android:id="@+id/clock"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="8dp"
-            android:layout_marginTop="2dp"
             android:textColor="@android:color/white"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
     </android.support.constraint.ConstraintLayout>
+
+    <org.mozilla.gecko.GeckoView
+        android:id="@+id/geckoview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
 
 </FrameLayout>
