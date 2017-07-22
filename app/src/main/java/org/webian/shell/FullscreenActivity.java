@@ -3,8 +3,9 @@ package org.webian.shell;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
+//import android.webkit.WebView;
+//import android.webkit.WebViewClient;
+import org.mozilla.gecko.GeckoView;
 
 public class FullscreenActivity extends AppCompatActivity {
 
@@ -16,10 +17,12 @@ public class FullscreenActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_fullscreen);
         mContentView = findViewById(R.id.fullscreen_content);
-        WebView browser = (WebView) findViewById(R.id.webview);
-        browser.setWebViewClient(new WebViewClient());
-        browser.getSettings().setJavaScriptEnabled(true);
-        browser.loadUrl("http://duckduckgo.com");
+        //WebView browser = (WebView) findViewById(R.id.webview);
+        //browser.setWebViewClient(new WebViewClient());
+        //browser.getSettings().setJavaScriptEnabled(true);
+        //browser.loadUrl("http://duckduckgo.com");
+        GeckoView geckoView = (GeckoView) findViewById(R.id.geckoview);
+        geckoView.loadUri("http://mozilla.com");
     }
 
     @Override
