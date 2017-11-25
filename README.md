@@ -1,5 +1,7 @@
 # Webian Tablet Shell
 
+**Note:** Deprecated by [Webian Shell Touch](https://github.com/webianproject/shell-touch).
+
 [Webian Tablet Shell](http://webian.org/shell) is a graphical shell for the web (tablet version).
 
 ## Getting Started
